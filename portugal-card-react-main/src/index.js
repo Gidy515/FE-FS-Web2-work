@@ -34,7 +34,7 @@ function Intro() {
         passion for creating beautiful and functional full-stack and blockchain
         applications.
       </p>
-      <p>Skills: HTML, CSS, JavaScript/Typescript, React, Rust</p>
+      <p>Skills: HTML, CSS, JavaScript/Typescript, React, Rust, Web3</p>
     </div>
   );
 }
