@@ -1,0 +1,85 @@
+/* Global reset and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start; /* align items to the left */
+  align-items: flex-start; /* align to top */
+}
+
+/* Card container */
+.card {
+  background: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 20px; /* space from edge */
+}
+
+/* Avatar image */
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+/* Name heading */
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+/* Description text */
+.card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.4;
+  margin: 12px 0 20px;
+}
+
+/* Skills container */
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+/* Skill item base style */
+.skillList div {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Background colors for each skill */
+.blue {
+  background-color: #2563eb; /* HTML & CSS */
+}
+
+.yellow {
+  background-color: #facc15; /* JavaScript/TypeScript */
+  color: #1f2937; /* dark text for contrast */
+}
+
+.skyBlue {
+  background-color: #0ea5e9; /* Solana */
+}
+
+.navy {
+  background-color: #1e3a8a; /* Rust */
+}
+
+.red {
+  background-color: #dc2626; /* Git & GitHub, Frontend frameworks */
+}
