@@ -23,6 +23,9 @@ export default function App() {
     setCounter((prev) => prev - stepsCount);
   }
 
+  const date = new Date();
+  date.setDate(date.getDate() + counter);
+
   return (
     <div>
       <h2>Step Size: {stepsCount}</h2>
@@ -36,6 +39,17 @@ export default function App() {
         <button onClick={decrementCounter}>-</button>
         <button onClick={incrementCounter}>+</button>
       </div>
+
+      <p>
+        <span>
+          {counter === 0
+            ? "Today is "
+            : counter > 0
+            ? `${counter} days from today is `
+            : `${counter} days ago was `}
+        </span>
+        <span>{date.toDateString()}</span>
+      </p>
     </div>
   );
 }
