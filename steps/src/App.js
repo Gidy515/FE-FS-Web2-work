@@ -17,17 +17,25 @@ export default function App() {
   // const [test, setTest] = useState({ name: "Jonas" });
 
   function handlePrevious() {
-    if (step > 1) setStep(step - 1);
-    alert("Previous step clicked");
+    // if (step > 1) setStep(step - 1); updating state from initial value (state)
+    if (step > 1) setStep((prevStep) => prevStep - 1); // updating state from the current state
   }
 
   function handleNext() {
-    if (step < 3) setStep(step + 1);
+    // if (step < 3) setStep(step + 1); updating state from initial value (state) // updating state from initial value (initial state)
+    if (step < 3) setStep((nextStep) => nextStep + 1); // updating state from the current state
+    if (step < 3) setStep((nextStep) => nextStep + 1); // // updating state from the current state
   }
 
   return (
     <div>
-      <button className="close" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className="close"
+        onClick={
+          () => setIsOpen((is) => !is)
+          //setIsOpen(!isOpen)
+        }
+      >
         &times;
       </button>
       {isOpen && (

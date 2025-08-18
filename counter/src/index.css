@@ -1,0 +1,26 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* push content to the top */
+}
+
+div {
+  text-align: center;
+  margin-top: 2rem; /* small space from top */
+}
+
+button {
+  font-size: 1.2rem; /* make buttons bigger */
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: none; /* no colors */
+  cursor: pointer;
+}
