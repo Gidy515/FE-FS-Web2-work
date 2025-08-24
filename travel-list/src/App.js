@@ -23,7 +23,7 @@ function Logo() {
 
 function Form() {
   const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState(10);
+  const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -44,6 +44,9 @@ function Form() {
       id: Date.now(),
     };
     console.log("Submitting:", newItem);
+
+    setDescription("");
+    setQuantity(1);
   }
   return (
     <form className="add-form" onSubmit={handleSubmit}>
